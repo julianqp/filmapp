@@ -1,0 +1,40 @@
+{
+  "name": "filmapp",
+  "version": "1.0.0",
+  "description": "## Implemntación",
+  "main": "index.js",
+  "scripts": {
+    "predev": "npm run lint",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint \"./**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.11.0",
+    "autoprefixer": "^10.2.4",
+    "axios": "^0.21.1",
+    "formik": "^2.2.6",
+    "next": "^10.0.6",
+    "postcss": "^8.2.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "sweetalert2": "^10.14.0",
+    "tailwindcss": "^2.0.2",
+    "yup": "^0.32.8",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  },
+  "author": "Julian Querol",
+  "license": "ISC"
+}
