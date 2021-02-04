@@ -22,7 +22,7 @@ const Checkout = ({ id }) => {
             </p>
             <p className="">Espero que disfrute.</p>
             <div className="text-center">
-              <Link href="/catalogo">
+              <Link href="/">
                 <button type="button" className="hover:underline hover:text-purple-400">
                   Volver al catálogo
                 </button>

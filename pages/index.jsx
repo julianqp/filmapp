@@ -1,10 +1,10 @@
-import Compras from '../components/compras/Compras'
+import CatalogoItem from '../components/catalogo/Catalogo'
 import Layout from '../components/Layout'
 
-const Index = () => (
+const Catalogo = () => (
   <Layout>
-    <Compras />
+    <CatalogoItem />
   </Layout>
 )
 
-export default Index
+export default Catalogo

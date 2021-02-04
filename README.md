@@ -6,10 +6,10 @@ La web se ha construido usando [Next.js](https://nextjs.org) (SSR), [React.js](h
 
 Las rutas sobre las que está construida la web son:
 
-- http://localhost:3000/: Mostrará las compras realizadas
-- http://localhost:3000/catalogo: Mostrará el catálogo de productos
+- http://localhost:3000/: Mostrará el catálogo de productos
 - http://localhost:3000/cart: Mostrará los productos que se han ido añadiendo al carrito y el formulario de pago
 - http://localhost:3000/checkout/[id]: Mostrará un mensaje de compra realizada correctamente.
+- http://localhost:3000/compras: Mostrará las compras realizadas
 - http://localhost:3000/compras/[id]: Mostrará la información de una compra realizada
 - http://localhost:3000/payment-error: Mensaje en caso de error (No implementada)
 

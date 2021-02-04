@@ -37,17 +37,17 @@ const MenuMobile = ({ onClose, route }) => {
             route === '/' ? selected : ''
           }`}
         >
-          Compras
+          Catálogo
         </button>
       </Link>
-      <Link href="/catalogo">
+      <Link href="/compras">
         <button
           type="button"
           className={`hover:text-gray-900 text-center mx-12 my-1 p-2 rounded-md border border-blue-500 ${
-            route === '/catalogo' ? selected : ''
+            route === '/compras' ? selected : ''
           }`}
         >
-          Catálogo
+          Compras
         </button>
       </Link>
     </div>

@@ -30,14 +30,14 @@ const Header = () => {
             <li className="mx-1">
               <Link href="/">
                 <button type="button" className={`${route === '/' ? selected : ''}`}>
-                  Compras
+                  Catálogo
                 </button>
               </Link>
             </li>
             <li className="mx-1">
-              <Link href="/catalogo">
-                <button type="button" className={`${route === '/catalogo' ? selected : ''}`}>
-                  Catálogo
+              <Link href="/compras">
+                <button type="button" className={`${route === '/compras' ? selected : ''}`}>
+                  Compras
                 </button>
               </Link>
             </li>
