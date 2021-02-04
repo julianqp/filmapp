@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import ItemBought from './ItemBought'
 import config from '../../config/config'
+import Titulo from '../Titulo'
 
 const Compras = () => {
   const [orders, setOrders] = useState(null)
@@ -16,9 +17,7 @@ const Compras = () => {
   }, [])
   return (
     <div className="mx-auto container">
-      <div className="w-full m-5 text-4xl text-left">
-        <h1>Compras</h1>
-      </div>
+      <Titulo title="Compras" />
 
       <div className="">
         {orders && orders.length > 0 ? (

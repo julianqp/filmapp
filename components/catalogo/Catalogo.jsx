@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Film from './Film'
 import getCart from '../../utils/localStorage'
 import config from '../../config/config'
+import Titulo from '../Titulo'
 
 const Catalogo = () => {
   const [data, setData] = useState(null)
@@ -32,9 +33,7 @@ const Catalogo = () => {
 
   return (
     <div className="mx-auto container">
-      <div className="w-full m-5 text-4xl text-left">
-        <h1>Catálogo</h1>
-      </div>
+      <Titulo title="Catálogo" />
 
       <div className="flex flex-wrap justify-center mx-4">
         {data &&

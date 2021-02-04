@@ -1,16 +1,21 @@
 import PropTypes from 'prop-types'
-import Link from 'next/link'
+import Router from 'next/router'
 
 const selected = 'text-blue-600'
 
 const MenuMobile = ({ onClose, route }) => {
   document.documentElement.style.overflow = 'hidden'
   document.body.scroll = 'no'
-  const cerrar = () => {
+  const cerrar = (route) => {
     document.documentElement.style.overflow = 'scroll'
     document.body.scroll = 'yes'
-    onClose()
+    if (route) {
+      Router.push(route)
+    } else {
+      onClose()
+    }
   }
+
   return (
     <div className="absolute overflow-auto top-0 left-0 bg-white w-full h-screen flex flex-col pt-5">
       <button
@@ -30,26 +35,24 @@ const MenuMobile = ({ onClose, route }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-      <Link href="/">
-        <button
-          type="button"
-          className={`hover:text-gray-900 text-center mx-12 my-1 p-2 rounded-md border border-blue-500 ${
-            route === '/' ? selected : ''
-          }`}
-        >
-          Catálogo
-        </button>
-      </Link>
-      <Link href="/compras">
-        <button
-          type="button"
-          className={`hover:text-gray-900 text-center mx-12 my-1 p-2 rounded-md border border-blue-500 ${
-            route === '/compras' ? selected : ''
-          }`}
-        >
-          Compras
-        </button>
-      </Link>
+      <button
+        type="button"
+        onClick={() => cerrar('/')}
+        className={`hover:text-gray-900 text-center mx-12 my-1 p-2 rounded-md border border-blue-500 ${
+          route === '/' ? selected : ''
+        }`}
+      >
+        Catálogo
+      </button>
+      <button
+        type="button"
+        onClick={() => cerrar('/compras')}
+        className={`hover:text-gray-900 text-center mx-12 my-1 p-2 rounded-md border border-blue-500 ${
+          route === '/compras' ? selected : ''
+        }`}
+      >
+        Compras
+      </button>
     </div>
   )
 }
